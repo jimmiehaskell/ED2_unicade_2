@@ -31,6 +31,12 @@ class MathFunc {
         return numero + termial_recursivo(numero - 1);
     }
 
+    int termial_recursivo2(int numero) {
+        if (numero==1)
+            return 1;
+        return numero + termial_recursivo(numero - 1);
+    }
+
     void fatorial_trad(int numero) {
         int result=1;
         for (int i=numero; i>0; i--)
